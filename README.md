@@ -1,2 +1,22 @@
-# NM_project_Bershy.P_4043_ACEW
-Car rental application using Django framework 
+# NM_FRIDAYBATCH_FSWD_PROJECT
+
+
+Project implemented by: 
+
+
+Name:
+
+
+ID:
+
+
+College name:
+
+
+Login credentials: 
+
+username: root
+
+
+Password: root
+
