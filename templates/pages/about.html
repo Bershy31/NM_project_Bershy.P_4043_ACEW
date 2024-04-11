@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block title %} | About Us {% endblock %}
+{% block content %}
+
+{% load static %}
+
+<!-- Sub banner start -->
+
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>About Us</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="active">About Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!-- Service center strat -->
+<div class="about-car content-area-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-lg-6">
+                <div class="about-car-photo">
+                    <div id="carDetailsSlider" class="carousel car-details-sliders slide">
+                        <!-- main slider carousel items -->
+                        <div class="carousel-inner">
+                            <div class="active item carousel-item" data-slide-number="0">
+                                <img src="https://assets.gqindia.com/photos/5e32a23675d13800081a488f/16:9/w_1280,c_limit/Mercedez-Benz-GLE%20review.jpg" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="1">
+                                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1931674c-b4c7-4333-b2b7-7b4c4399ec48/dge6frq-6d594c25-bf2f-4075-89c4-16eb2a6d5e22.jpg/v1/fill/w_1920,h_1098,q_75,strp/amg_mercedes_wallpaper_by_lovestoryai_dge6frq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5MzE2NzRjLWI0YzctNDMzMy1iMmI3LTdiNGM0Mzk5ZWM0OFwvZGdlNmZycS02ZDU5NGMyNS1iZjJmLTQwNzUtODljNC0xNmViMmE2ZDVlMjIuanBnIiwiaGVpZ2h0IjoiPD0xMDk4Iiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMTkzMTY3NGMtYjRjNy00MzMzLWIyYjctN2I0YzQzOTllYzQ4XC9sb3Zlc3RvcnlhaS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.kcsuZXRsslwjXQ9uO5ouWSZyVyWRlzIqFNyhMT8qfkM" class="img-fluid" alt="slider-car">
+                            </div>
+                            <div class="item carousel-item" data-slide-number="2">
+                                <img src="https://www.carlogos.org/uploads/2021/fastest-mercedes-benz-cars.jpg" alt="slider-car">
+                            </div>
+                        </div>
+                        <!-- main slider carousel nav controls -->
+                        <ul class="carousel-indicators car-properties list-inline nav nav-justified">
+                            <li class="list-inline-item active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#carDetailsSlider">
+                                    <img src="https://assets.gqindia.com/photos/5e32a23675d13800081a488f/16:9/w_1280,c_limit/Mercedez-Benz-GLE%20review.jpg" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#carDetailsSlider">
+                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1931674c-b4c7-4333-b2b7-7b4c4399ec48/dge6frq-6d594c25-bf2f-4075-89c4-16eb2a6d5e22.jpg/v1/fill/w_1920,h_1098,q_75,strp/amg_mercedes_wallpaper_by_lovestoryai_dge6frq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5MzE2NzRjLWI0YzctNDMzMy1iMmI3LTdiNGM0Mzk5ZWM0OFwvZGdlNmZycS02ZDU5NGMyNS1iZjJmLTQwNzUtODljNC0xNmViMmE2ZDVlMjIuanBnIiwiaGVpZ2h0IjoiPD0xMDk4Iiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMTkzMTY3NGMtYjRjNy00MzMzLWIyYjctN2I0YzQzOTllYzQ4XC9sb3Zlc3RvcnlhaS00LnBuZyIsIm9wYWNpdHkiOjk1LCJwcm9wb3J0aW9ucyI6MC40NSwiZ3Jhdml0eSI6ImNlbnRlciJ9fQ.kcsuZXRsslwjXQ9uO5ouWSZyVyWRlzIqFNyhMT8qfkM" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#carDetailsSlider">
+                                    <img src="https://www.carlogos.org/uploads/2021/fastest-mercedes-benz-cars.jpg" class="img-fluid" alt="small-car">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 align-self-center">
+                <div class="best-used-car">
+                    <h3>Welcome to <span>CarDealer Website</span></h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
+                    <p class="mb-0">electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service center end -->
+
+
+
+<!-- Our team start -->
+<div class="our-team content-area">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>Executive <span>Team</span></h1>
+            <p>Team working behind maintaining the quality of our Car Dealership Website.</p>
+        </div>
+        <!-- Slick slider area start -->
+        <div class="slick-slider-area clearfix">
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+            {% for team in teams %}
+                <div class="slick-slide-item">
+                    <div class="team-1">
+                        <div class="photo">
+                            <a href="#">
+                                <img src="{{team.photo.url}}" alt="team-1" class="img-fluid">
+                            </a>
+                            <div class="social-list clearfix">
+                                <a href="{{team.facebook_link}}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
+                                <a href="{{team.twitter_link}}" target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a>
+                                <a href="{{team.google_plus_link}}" target="_blank" class="google-bg"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+					
+                        <div class="details">
+                            <h4><a href="team-detail.html">{{team.first_name}} {{team.last_name}}</a></h4>
+                            <h5>{{team.designation}}</h5>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our team end -->
+{% endblock %}
